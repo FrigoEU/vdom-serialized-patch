@@ -88,7 +88,8 @@ var structures = [
   h('div', {style: {background: 'blue', color: 'red'}}),
   h('div', {}),
   h('input', {type: 'text', value: 'SoftSetHook'}),
-  new Thunk("thunktest")
+  new Thunk("thunktest"),
+  h('div', [new Thunk("thunktest")])
 ];
 
 describe('test suite', function () {
